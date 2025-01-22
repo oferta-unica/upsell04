@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receba Suas Taxas de Volta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #4caf50, #00bcd4);
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 16px;
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .container::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            z-index: -1;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #00796b;
+        }
+        p {
+            font-size: 1rem;
+            margin: 10px 0;
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        ul li {
+            font-size: 1rem;
+            background: #e0f7fa;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            color: #00796b;
+            font-weight: 600;
+        }
+        .highlight {
+            color: #28a745; /* Verde vibrante */
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #00796b;
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            animation: pulse 1.5s infinite;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 0 10px;
+                width: auto;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p, ul li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🎉 Receba Suas Taxas de Volta!</h2>
+        <p>Confira os valores pagos em taxas:</p>
+        <ul>
+            <li>Kwai Rewards: <span class="highlight">R$ 19,90</span></li>
+            <li>Taxa Anual: <span class="highlight">R$ 16,90</span></li>
+            <li>Taxa de Antecipação: <span class="highlight">R$ 14,90</span></li>
+            <li>Tarifa Anti-Fraude: <span class="highlight">R$ 11,90</span></li>
+            <li>Taxa de Volta: <span class="highlight">R$ 26,54</span></li>
+        </ul>
+        <p><strong>Total de taxas:</strong> <span class="highlight">R$ 102,81</span></p>
+        <p><strong>Valor a receber:</strong> <span class="highlight">R$ 816,77</span></p>
+        <p>Para receber, é necessário pagar uma tarifa de <strong>11%</strong> do valor das taxas (<span class="highlight">R$ 102,81</span>).</p>
+        <a href="https://pay.realizandopayseg.site/checkout/37ba348c-5ddf-4302-9b28-e6d4f6a95fa4" class="cta-button">💸 Receber Agora</a>
+    </div>
+
+
+</body></html>
