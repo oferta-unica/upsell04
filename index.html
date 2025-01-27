@@ -1,26 +1,6 @@
 <!DOCTYPE html><html lang="pt-BR"><head>
 
-<script>
-    var back_redirect_back_link = 'https://oferta-unica.github.io/back/';
 
-    // Função para pegar todos os parâmetros da URL
-    function getAllUrlParams() {
-        return window.location.search;
-    }
-
-    // Adiciona duas entradas no histórico para lidar com o botão de voltar
-    history.pushState({}, "", location.href);
-    history.pushState({}, "", location.href);
-
-    window.onpopstate = function () {
-        setTimeout(function () {
-            // Pega todos os parâmetros da URL atual e os adiciona ao redirecionamento
-            var allParams = getAllUrlParams();
-            var redirectUrl = back_redirect_back_link + allParams;
-            location.href = redirectUrl;  // Redireciona para a nova URL com os parâmetros
-        }, 1);
-    };
-</script>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
